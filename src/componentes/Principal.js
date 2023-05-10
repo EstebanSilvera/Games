@@ -53,9 +53,9 @@ const Principal = () => {
 
       <Menu />
 
-      <body>
+      <body style={{ background:"#2E3239"}}>
 
-        <div style={{ backgroundColor: "#212529" }}>
+        <div style={{ backgroundColor: "#2E3239" }}>
           <Carousel fade >
 
             <Carousel.Item style={{ posititon: "absolute" }}>
@@ -106,7 +106,7 @@ const Principal = () => {
           </Carousel>
         </div>
 
-        <div style={{ backgroundColor: "#212529", paddingTop: "100px", paddingBottom: "100px" }}>
+        <div style={{ background: "linear-gradient(#2E3239 30%, #A2B2EE)", paddingTop: "100px", paddingBottom: "100px" }}>
 
           <Swiper
             className='container'
@@ -118,40 +118,40 @@ const Principal = () => {
             scrollbar={{ draggable: true }}
           >
             <SwiperSlide>
-              <Card className="bg-dark text-white " style={{ borderColor: "transparent" }}>
+              <Card className="bg-dark text-white " style={{ borderColor: "transparent", borderRadius: "30px" }}>
                 <Card.Img className='imge' src={icon} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
               </Card>
 
             </SwiperSlide>
 
             <SwiperSlide>
-              <Card className="bg-dark text-white" style={{ borderColor: "transparent" }}>
+              <Card className="bg-dark text-white" style={{ borderColor: "transparent", borderRadius: "30px" }}>
                 <Card.Img className='imge' src={setup} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
               </Card>
             </SwiperSlide>
 
             <SwiperSlide>
-              <Card className="bg-dark text-white" style={{ borderColor: "transparent" }}>
+              <Card className="bg-dark text-white" style={{ borderColor: "transparent", borderRadius: "30px" }}>
                 <Card.Img className='imge' src={icon} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
               </Card>
             </SwiperSlide>
 
             <SwiperSlide>
-              <Card className="bg-dark text-white" style={{ borderColor: "transparent" }}>
+              <Card className="bg-dark text-white" style={{ borderColor: "transparent", borderRadius: "30px" }}>
                 <Card.Img className='imge' src={setup} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
               </Card>
               <br />
             </SwiperSlide>
 
             <SwiperSlide>
-              <Card className="bg-dark text-white" style={{ borderColor: "transparent" }}>
+              <Card className="bg-dark text-white" style={{ borderColor: "transparent", borderRadius: "30px" }}>
                 <Card.Img className='imge' src={icon} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
               </Card>
               <br />
             </SwiperSlide>
 
             <SwiperSlide>
-              <Card className="bg-dark text-white" style={{ borderColor: "transparent" }}>
+              <Card className="bg-dark text-white" style={{ borderColor: "transparent", borderRadius: "30px" }}>
                 <Card.Img className='imge' src={setup} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
               </Card>
               <br />
@@ -162,7 +162,7 @@ const Principal = () => {
         </div>
 
 
-        <section ref={ref} style={{ background: "linear-gradient(#212529 10%,white)", display: "flex", justifyContent: "space-between", boxShadow: "0px 0px 5px 3px black" }}>
+        <section ref={ref} style={{ background: "#A2B2EE", display: "flex", justifyContent: "space-between", boxShadow: "0px 0px 5px 3px black" }}>
 
           <div className={inView ? 'movimiento-img-medium' : 'Not visible'} style={{ background: "linear-gradient(transparent 90% , white )" }}>
 
@@ -170,7 +170,6 @@ const Principal = () => {
               width: "50vw",
               height: "30vw",
               opacity: "0.7",
-              boxShadow: "0px 0px 5px 2px white "
             }} />
 
           </div>
@@ -184,7 +183,6 @@ const Principal = () => {
 
             <div style={{ position: "absolute", top: "130%", left: "25%", width: "20vw", height: "15vw" }}>
               <Swiper
-                style={{ borderRadius: "30px" }}
                 className='container'
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 spaceBetween={50}
@@ -194,44 +192,30 @@ const Principal = () => {
                 scrollbar={{ draggable: true }}
               >
                 <SwiperSlide>
-                  <Card className="bg-dark text-white " style={{ borderColor: "transparent" }}>
+                  <Card className="bg-dark text-white " style={{ borderColor: "transparent", borderRadius: "30px" }}>
                     <Card.Img className='imge' src={icon} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
                   </Card>
 
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Card className="bg-dark text-white" style={{ borderColor: "transparent" }}>
+                  <Card className="bg-dark text-white" style={{ borderColor: "transparent", borderRadius: "30px" }}>
                     <Card.Img className='imge' src={setup} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
                   </Card>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Card className="bg-dark text-white" style={{ borderColor: "transparent" }}>
+                  <Card className="bg-dark text-white" style={{ borderColor: "transparent", borderRadius: "30px" }}>
                     <Card.Img className='imge' src={icon} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
                   </Card>
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Card className="bg-dark text-white" style={{ borderColor: "transparent" }}>
+                  <Card className="bg-dark text-white" style={{ borderColor: "transparent", borderRadius: "30px" }}>
                     <Card.Img className='imge' src={setup} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
                   </Card>
-                  <br />
                 </SwiperSlide>
 
-                <SwiperSlide>
-                  <Card className="bg-dark text-white" style={{ borderColor: "transparent" }}>
-                    <Card.Img className='imge' src={icon} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
-                  </Card>
-                  <br />
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <Card className="bg-dark text-white" style={{ borderColor: "transparent" }}>
-                    <Card.Img className='imge' src={setup} alt="Card image" style={{ objectFit: "cover", borderRadius: "30px" }} />
-                  </Card>
-                  <br />
-                </SwiperSlide>
 
               </Swiper>
             </div>
@@ -263,13 +247,13 @@ const Principal = () => {
         </section>
 
 
-        <main ref={ref1} className='container' style={{ marginTop: "80px", marginBottom: "50px" }}>
+        <main ref={ref1} className='container' style={{ marginTop: "80px"}}>
 
-          <div className={inView1 ? 'aparicion' : 'no-mostrar'} style={{ background: "#85C1E9", padding: "3vw", borderRadius: "30px", transition: "1s", boxShadow: "0px 0px 15px 6px #85C1E9" }} >
-            <YouTube className='video' videoId={video} />
-          </div>
+            <div className={inView1 ? 'aparicion' : 'no-mostrar'} style={{ background: "#A2B2EE", padding: "3vw", borderRadius: "30px", transition: "1s", boxShadow: "0px 0px 15px 6px #A2B2EE" }} >
+              <YouTube className='video' videoId={video} />
+            </div>
 
-        </main>
+        </main><br/ >
 
       </body>
 
